@@ -1,0 +1,56 @@
+{
+  "name": "holygrailmin",
+  "version": "0.0.1",
+  "description": "A minimal, responsive, style-agnostic CSS framework.",
+  "main": "scss/style.scss",
+  "style": "dist/style.css",
+  "files": [
+    "dist",
+    "scss"
+  ],
+  "directories": {
+    "lib": "scss"
+  },
+  "scripts": {
+
+
+
+    "start": "npm run format && npm run docs && npm run build && npm run open:guide",
+    "open:guide": "open index.html",
+    "docs": "sass scss/docs.scss doc/docs.css --style expanded",
+    "build": "sass scss/style.scss dist/style.css && sass scss/docs.scss doc/docs.css --style expanded && node add-name-version-package.js",
+    "build:min": "sass scss/style.scss dist/style.min.css --style compressed && node add-name-version-package.js",
+    "build-sass": "sass --style expanded --source-map true scss/style.scss dist/style.css && node add-name-version-package.js && sass --output-style expanded --source-map true scss/docs.scss doc/docs.css",
+    "format": "prettier --write 'scss/**/*.+(css|scss)'",
+    "prepublishOnly": "npm run build && npm run build:min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holygrail2/holygrail.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "minimal",
+    "responsive",
+    "style-agnostic",
+    "framework",
+    "toolkit",
+    "holygrail2"
+  ],
+  "author": "Manuel Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/holygrail2/holygrail/issues",
+    "email": "dev@digitalstrategy.es"
+  },
+  "homepage": "https://holygrail2.netlify.app",
+  "devDependencies": {
+    "open": "^9.1.0",
+    "prettier": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.65.1"
+
+  }
+
+}

@@ -1,0 +1,16 @@
+@import '../abstract/_all';
+
+// Crear clases dinámicas usando variables CSS
+@each $name, $value in $colors {
+  :root {
+    --#{$name}: #{$value};
+  }
+
+  .bg-#{$name} {
+    background-color: var(--#{$name}, #{$value}); // Con fallback
+  }
+
+  .#{$name} {
+    color: var(--#{$name}, #{$value}); // Con fallback
+  }
+}

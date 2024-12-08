@@ -1,0 +1,87 @@
+@use 'sass:math';
+@import '../abstract/_all';
+
+$list-disc: 4px;
+
+ul.list-disc {
+  list-style: none;
+  margin: $padding-global * 2 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding: 0 $padding-global * 2;
+
+    &::after {
+      background-color: $list-disc-color;
+      content: '';
+      border-radius: 50%;
+      width: $list-disc;
+      height: $list-disc;
+      position: absolute;
+      left: 0;
+      margin-top: -#{math.div($list-disc, 4)};
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    a {
+      text-decoration: none;
+      padding: 14px 0;
+    }
+
+    a::after {
+      bottom: 7px;
+    }
+  }
+}
+
+ul.list-inline {
+  li {
+    display: inline-flex;
+    padding: 0 math.div($padding-global, 2);
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+ul.list-inline-flex {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-flex;
+    padding: 0 math.div($padding-global, 2);
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+ul.list-inline-clear {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+ul.list-clear {
+  li {
+    list-style: none;
+
+    &::after {
+      display: none;
+    }
+  }
+}

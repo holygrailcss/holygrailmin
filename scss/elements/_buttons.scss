@@ -1,0 +1,407 @@
+@use 'sass:math';
+@import '../abstract/_all';
+input:is([type='button'], [type='submit'], [type='reset']),
+input[type='file']::file-selector-button,
+button {
+  color: $c-primary;
+}
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: $btn-radius;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: $btn-text-full;
+  vertical-align: middle;
+  justify-content: center;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 16px 8px 16px;
+  background-color: transparent;
+  height: $height-btn;
+  @include font-regular;
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:visited,
+  &:active,
+  &.active {
+    text-decoration: none;
+    opacity: 0.6;
+    outline: none;
+    cursor: pointer;
+  }
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    filter: grayscale(1);
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
+    opacity: 1;
+    cursor: not-allowed;
+  }
+}
+
+.btn-xs {
+  position: relative;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-size: $text-sm;
+  margin-right: $padding-global;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: math.div($btn-padding, 2);
+  &:active,
+  &:focus,
+  &:visited {
+    outline: none;
+  }
+}
+
+.btn--small {
+  height: 40px;
+  padding-right: $padding-global * 2;
+  padding-left: $padding-global * 2;
+}
+.btn--medium {
+  padding-right: $padding-global * 5;
+  padding-left: $padding-global * 5;
+  max-width: 272px;
+  width: 100%;
+  height: 40px;
+}
+.btn--mini-rd {
+  padding-right: $padding-global * 3;
+  padding-left: $padding-global * 3;
+  font-size: $btn-text-mini;
+  height: 32px;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  @media (min-width: $break-sm) {
+    padding: $padding-global * 2;
+    font-size: $btn-text-small;
+    height: 40px;
+  }
+}
+.btn--large {
+  height: 40px;
+  min-width: 200px;
+  max-width: 400px;
+  width: 100%;
+  padding-right: $padding-global * 7;
+  padding-left: $padding-global * 7;
+  font-size: $btn-text-large;
+}
+.btn--xlarge {
+  padding-right: $padding-global * 8;
+  padding-left: $padding-global * 8;
+  position: relative;
+  display: inline-flex;
+  min-height: 40px;
+  min-width: 200px;
+  max-width: 400px;
+  padding: $btn-padding;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn--xxl {
+  display: flex;
+  height: 60px;
+  padding: 10px 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn--full {
+  width: 100%;
+  padding-right: $padding-global * 2;
+  padding-left: $padding-global * 2;
+  font-size: $btn-text-full;
+  height: 40px;
+}
+
+.btn-primary {
+  color: $c-white;
+  background-color: $c-primary;
+  border: 1px solid $c-primary;
+  svg {
+    g {
+      fill: $c-white;
+      stroke: $c-white;
+    }
+    circle {
+      stroke: $c-white;
+    }
+    path {
+      fill: $c-white;
+    }
+  }
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    color: $c-white;
+    background-color: $c-dark-grey;
+    border: 1px solid $c-dark-grey;
+    opacity: 1;
+    cursor: pointer;
+  }
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
+    opacity: 1;
+    svg {
+      g {
+        fill: $c-dark-grey;
+        stroke: $c-dark-grey;
+      }
+      circle {
+        stroke: $c-dark-grey;
+      }
+      path {
+        fill: $c-dark-grey;
+      }
+    }
+  }
+  .has-light & {
+    color: $c-primary;
+    background-color: $c-white;
+    border: 1px solid $c-white;
+    svg {
+      g {
+        fill: $c-primary;
+        stroke: $c-primary;
+      }
+      circle {
+        stroke: $c-primary;
+      }
+      path {
+        fill: $c-primary;
+      }
+    }
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      color: $c-white;
+      background-color: $c-dark-grey;
+      border: 1px solid $c-dark-grey;
+      opacity: 1;
+      svg {
+        g {
+          fill: $c-white;
+          stroke: $c-white;
+        }
+        circle {
+          stroke: $c-white;
+        }
+        path {
+          fill: $c-white;
+        }
+      }
+    }
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
+      color: $c-dark-grey;
+      opacity: 1;
+    }
+  }
+}
+.btn-secondary {
+  color: $c-primary;
+  background-color: $c-white;
+  border: 1px solid $c-primary;
+  svg {
+    circle {
+      stroke: $c-primary;
+    }
+    path {
+    }
+  }
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    color: $c-primary;
+    background-color: $c-white;
+    border: 1px solid $c-dark-grey;
+    opacity: 1;
+  }
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
+    opacity: 1;
+    svg {
+      g {
+        fill: $c-middle-grey;
+        stroke: $c-middle-grey;
+      }
+      circle {
+        stroke: $c-middle-grey;
+      }
+      path {
+        fill: $c-middle-grey;
+      }
+    }
+  }
+  .has-light & {
+    color: $c-white;
+    background-color: transparent;
+    border: 1px solid $c-white;
+    svg {
+      g {
+        fill: $c-white;
+        stroke: $c-white;
+      }
+      circle {
+        stroke: $c-white;
+      }
+      path {
+        fill: $c-white;
+      }
+    }
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      color: $c-white;
+      background-color: $c-dark-grey;
+      border: 1px solid $c-dark-grey;
+      opacity: 1;
+      svg {
+        g {
+          fill: $c-white;
+          stroke: $c-white;
+        }
+        circle {
+          stroke: $c-white;
+        }
+        path {
+          fill: $c-white;
+        }
+      }
+    }
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      background-color: $c-light-grey;
+      border: 1px solid $c-light-grey;
+      color: $c-dark-grey;
+      opacity: 1;
+    }
+  }
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  border: 0 solid transparent;
+  height: auto;
+  svg {
+    g {
+      fill: $c-primary;
+      stroke: $c-primary;
+    }
+    circle {
+      stroke: $c-primary;
+    }
+  }
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    opacity: 0.6;
+    border: 0 solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: $c-light-grey;
+    border: 1px solid $c-light-grey;
+    color: $c-dark-grey;
+    filter: none;
+    opacity: 1;
+    svg-icon,
+    svg-icon2 {
+      background-color: transparent !important;
+      border: 0 solid transparent !important;
+    }
+  }
+  .has-light & {
+    color: $c-white;
+    border-color: transparent;
+    background-color: transparent;
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:active,
+    &.active {
+      opacity: 0.6;
+      border: 1px solid transparent;
+      background-color: transparent;
+    }
+  }
+}
+
+.btn-link {
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  color: $c-primary;
+  background-color: transparent;
+  padding: 0;
+  border-radius: $btn-radius;
+  height: auto;
+  .has-light & {
+    color: $c-white;
+    background-color: transparent;
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover,
+    &:visited,
+    &:active,
+    &.active {
+      background-color: transparent;
+      color: $c-white;
+      text-decoration: none;
+      opacity: 0.6;
+    }
+  }
+}

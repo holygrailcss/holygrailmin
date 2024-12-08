@@ -1,0 +1,1620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.19.0/prism.min.js"></script>
+    <link rel="stylesheet" href="doc/docs.css"/>
+    <link rel="stylesheet" href="dist/style.css"/>
+    <meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width"/>
+    <!-- Core Meta -->
+    <title>GUIA</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+      #toggleButton {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+      }
+      body {
+        font-size: 12px;
+      }
+      .btn-secondary svg g {
+        fill: transparent;
+        stroke: #1a1a1a;
+      }
+      .btn-primary svg g {
+        fill: transparent;
+        stroke: #fff;
+      }
+      .btn-primary.disabled svg g {
+        fill: transparent;
+      }
+      b {
+        padding-bottom: 32px;
+        font-size: 12px;
+        font-weight: 600;
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+        letter-spacing: 1px;
+        margin-top: 80px;
+        border-bottom: 1px solid black;
+      }
+      b.in {
+        padding-bottom: 24px;
+        font-size: 12px;
+        font-weight: 400;
+        display: block;
+        padding: 4px 16px;
+        border-radius: 16px;
+        background-color: #dcdcdc;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        display: inline-block;
+      }
+      strong {
+        display: block;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body class="is-ltr guide" dir="ltr">
+    <div class="container-fluid guia">
+      <div class="row">
+        <div class="site-menu-mobile">
+          <ul class="list-clear   has-light ">
+            <a class="btn btn-tertiary  btn--mini" target="_parent" href="#colors">
+              <span>COLORS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#tipografia">
+              <span>FUENTES</span></a>
+            <a class="btn btn-tertiary  btn--mini" target="_parent" href="#espaciados">
+              <span>ESPACIADOS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#ratios">
+              <span>RATIOS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#buttons">
+              <span>BUTTONS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#checks">
+              <span>CHECKS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#inputs">
+              <span>INPUTS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#links">
+              <span>LINKS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#selects">
+              <span>SELECTS</span></a>
+            <a class="btn btn-tertiary btn--mini" target="_parent" href="#tabs">
+              <span>TABS</span></a>
+            <button class="" id="toggleButton">RTL</button>
+          </ul>
+        </div>
+        <div class="mini-site-main pt-64 mt-64">
+          <div class="mb-24 fluid-3-r">Holygrailmin Update</div>
+          <div data-aos-delay="100" class="is-flex mb-24">
+            <a class="mr-16" href="https://www.npmjs.com/package/holygrail2" rel="nofollow">
+              <img
+                src="https://img.shields.io/npm/v/holygrail2"
+                alt="npm"
+                data-canonical-src="https://img.shields.io/npm/v/holygrail2.svg"
+                style="max-width: 100%"
+/></a>
+            <a href="https://www.npmjs.com/package/holygrail2" target="_blank" rel="nofollow">
+              <img src="https://img.shields.io/npm/dm/holygrail2.svg"/>
+            </a>
+          </div>
+          <b id="colors">Colores</b>
+          <table class="c-middle-grey">
+            <tbody>
+              <tr>
+                <td class="bg-c-primary"></td>
+                <td class="c-primary">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-primary</td>
+                <td>--bg-c-primary</td>
+                <td>#000</td>
+              </tr>
+              <tr>
+                <td class="bg-c-secondary"></td>
+                <td class="c-secondary">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-secondary</td>
+                <td>--bg-c-secondary</td>
+                <td>#666666</td>
+              </tr>
+              <tr>
+                <td class="bg-c-accent"></td>
+                <td class="c-accent">
+                  <div class="text-color c-accent">Aa</div>
+                </td>
+                <td>--c-accent</td>
+                <td>--bg-c-accent</td>
+                <td>#ed0f2b</td>
+              </tr>
+              <tr>
+                <td class="bg-c-black"></td>
+                <td class="c-black">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-black</td>
+                <td>--bg-c-black</td>
+                <td>#000</td>
+              </tr>
+              <tr>
+                <td class="bg-c-dark-grey"></td>
+                <td class="c-dark-grey">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-dark-grey</td>
+                <td>--bg-c-dark-grey</td>
+                <td>#333333</td>
+              </tr>
+              <tr>
+                <td class="bg-c-middle-grey"></td>
+                <td class="c-middle-grey">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-middle-grey</td>
+                <td>--bg-c-middle-grey</td>
+                <td>#777777</td>
+              </tr>
+              <tr>
+                <td class="bg-c-light-grey"></td>
+                <td class="c-light-grey">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-light-grey</td>
+                <td>--bg-c-light-grey</td>
+                <td>#cccccc</td>
+              </tr>
+              <tr>
+                <td class="bg-c-white"></td>
+                <td class="c-white">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-white</td>
+                <td>--bg-c-white</td>
+                <td>#ffffff</td>
+              </tr>
+              <tr>
+                <td class="bg-c-error"></td>
+                <td class="c-error">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-error</td>
+                <td>--bg-c-error</td>
+                <td>#ed0f2b</td>
+              </tr>
+              <tr>
+                <td class="bg-c-sale"></td>
+                <td class="c-sale">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-sale</td>
+                <td>--bg-c-sale</td>
+                <td>#ffce4e</td>
+              </tr>
+              <tr>
+                <td class="bg-c-info"></td>
+                <td class="c-info">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-info</td>
+                <td>--bg-c-info</td>
+                <td>#1a32a4</td>
+              </tr>
+              <tr>
+                <td class="bg-c-success"></td>
+                <td class="c-success">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-success</td>
+                <td>--bg-c-success</td>
+                <td>#12882c</td>
+              </tr>
+              <tr>
+                <td class="bg-c-valid"></td>
+                <td class="c-valid">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-valid</td>
+                <td>--bg-c-valid</td>
+                <td>#12882c</td>
+              </tr>
+              <tr>
+                <td class="bg-c-warning"></td>
+                <td class="c-warning">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-warning</td>
+                <td>--bg-c-warning</td>
+                <td>#ffa500</td>
+              </tr>
+              <tr>
+                <td class="bg-c-notice"></td>
+                <td class="c-notice">
+                  <div class="text-color">Aa</div>
+                </td>
+                <td>--c-notice</td>
+                <td>--bg-c-notice</td>
+                <td>#42aaff</td>
+              </tr>
+              <tr>
+                <td class="bg-c-alert"></td>
+                <td class="c-alert">
+                  <div class="text-color c-alert">Aa</div>
+                </td>
+                <td>--c-alert</td>
+                <td>--bg-c-alert</td>
+                <td>#ff4444</td>
+              </tr>
+            </tbody>
+          </table>
+          <b id="tipografia">TIPOGRAFIA</b>
+          <section id="">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-8-docs filashead "></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="minheaders">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-8-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <b id="espaciados">ESPACIADOS</b>
+          <section id="">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-5-docs filashead b">
+                  <div class="item bold">MARGIN TOP</div>
+                  <div class="item">XS</div>
+                  <div class="item">SM</div>
+                  <div class="item">MD</div>
+                  <div class="item">LG</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="margintop">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-5-docs filashead bold">
+                  <div class="item">MARGIN BOTTOM</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="marginbottom">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-5-docs filashead bold">
+                  <div class="item">PADDING TOP</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="paddingtop">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-5-docs filashead bold">
+                  <div class="item">PADDING BOTTOM</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="paddingbottom">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-5-docs filashead bold">
+                  <div class="item">PADDING LEFT</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="paddingleft">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="filas grid-5-docs filashead bold">
+                  <div class="item">PADDING RIGHT</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="paddingright">
+                  <div class="row">
+                    <div class="col-xs-12 text-14-r">
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                      <div class="filas grid-5-docs">
+                        <div class="item item-0"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <b id="checks">CHECKS</b>
+          <div class="checkbox-radio">
+            <input
+                  id="gender_female"
+                  name="gender"
+                  formcontrolname="gender"
+                  type="radio"
+                  value="F"
+                  ng-reflect-name="gender"
+                  ng-reflect-form-control-name="gender"
+                  ng-reflect-value="F"
+                  class="ng-touched ng-dirty ng-valid"
+/>
+            <label for="gender_female">
+              <i class="ico-radio"></i>
+              <span class="p-s">Mujer</span></label
+                >
+          </div>
+          <div class="checkbox-radio">
+            <input
+                  id="gender_male"
+                  name="gender"
+                  formcontrolname="gender"
+                  type="radio"
+                  value="M"
+                  ng-reflect-name="gender"
+                  ng-reflect-form-control-name="gender"
+                  ng-reflect-value="M"
+                  class="ng-touched ng-dirty ng-valid"
+/>
+            <label for="gender_male">
+              <i class="ico-radio"></i>
+              <span class="p-s">Hombre</span></label
+                >
+          </div>
+          <b id="inputs">INPUTS</b>
+          <section>
+            <div class="">
+              <div class="form-input-label-2">
+                <input
+                      type="email"
+                      id="uno"
+                      class="input"
+                      placeholder="Email address"
+                      required=""
+/>
+                <label for="uno">Input normal</label>
+              </div>
+              <div class="grid-4 grid-gap-16">
+                <div class="">
+                  <div class="form-input-label-2">
+                    <input
+                      type="email"
+                      id="uno"
+                      class="input disabled"
+                      placeholder="Email address"
+                      required=""
+/>
+                    <label for="uno">Input normal</label>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="form-input-label-2 has-ico-pre">
+                    <input
+                      type="email"
+                      id="dos"
+                      class="input"
+                      placeholder="Email address"
+                      required=""
+/>
+                    <label for="dos">Input pre icon</label>
+                    <div class="ico-pre">
+                      <svg-icon>
+                        <div>
+                          <svg width="16" height="16" viewBox="0 0 16 16">
+                            <g stroke-width="1" fill="none" stroke="#212121">
+                              <circle cx="8" cy="8" r="7.5"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                      </svg-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="form-input-label-2 has-ico-post">
+                    <input
+                      type="email"
+                      id="tres"
+                      class="input"
+                      placeholder="Email address"
+                      required=""
+/>
+                    <label for="tres">Input post icon</label>
+                    <div class="ico-post">
+                      <svg-icon>
+                        <div>
+                          <svg width="16" height="16" viewBox="0 0 16 16">
+                            <g stroke-width="1" fill="none" stroke="#212121">
+                              <circle cx="8" cy="8" r="7.5"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                      </svg-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-4 grid-gap-16 has-light bg-primary">
+                <div class="">
+                  <div class="form-input-label-2">
+                    <input
+                      type="email"
+                      id="uno"
+                      class="input"
+                      placeholder="Email address"
+                      required=""
+/>
+                    <label for="uno">Input normal</label>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="form-input-label-2 has-ico-pre">
+                    <input
+                      type="email"
+                      id="dos"
+                      class="input"
+                      placeholder="Email address"
+                      required=""
+/>
+                    <label for="dos">Input pre icon</label>
+                    <div class="ico-pre">
+                      <svg-icon>
+                        <div>
+                          <svg width="16" height="16" viewBox="0 0 16 16">
+                            <g stroke-width="1" fill="none" stroke="#fff">
+                              <circle cx="8" cy="8" r="7.5"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                      </svg-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="form-input-label-2 has-ico-post">
+                    <input
+                      type="email"
+                      id="tres"
+                      class="input"
+                      placeholder="Email address"
+                      required=""
+/>
+                    <label for="tres">Input post icon</label>
+                    <div class="ico-post">
+                      <svg-icon>
+                        <div>
+                          <svg width="16" height="16" viewBox="0 0 16 16">
+                            <g stroke-width="1" fill="none" stroke="#fff">
+                              <circle cx="8" cy="8" r="7.5"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                      </svg-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <b id="textarea">Buttons </b>
+          <section>
+            <div class="row">
+              <div class="col-xs-12">
+                <button class=" btn btn-primary"> .btn-primary </button>
+                <button class=" btn btn-secondary"> .btn-secondary </button>
+                <button class=" btn btn-tertiary"> .btn-tertiary </button>
+                <button class=" btn btn-link"> .btn-link </button>
+              </div>
+            </div>
+          </section>
+          <b id="textarea">Textarea </b>
+          <section>
+            <div class="row ">
+              <div class="col-xs-12">
+                <div class="pre-show">
+                  <div class="form-input-label-2">
+                    <textarea id="comments" formcontrolname="comments" class="form-control input"></textarea>
+                    <label for="comments">Comentarios</label>
+                    <div class="help">
+                      <div class="title-m c-dark-grey">Ej: Tus comentarios aquí</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <b id="links">Links</b>
+          <section>
+            <div class="row ">
+              <div class="col-xs-12">
+                <div class="pre-show">
+                  <a href="#" class="link-line">link line</a>
+                  <br/>
+                  <br/>
+                  <a href="#" class="link-raw">link raw</a><br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </section>
+          <b id="list">List</b>
+          <section>
+            <div class="row">
+              <div class="col-xs-3">
+                <div class=" "></div>
+              </div>
+              <div class="col-xs-3">
+                  <div class="mb-16"></div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="mb-16"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <i class="in" id="list">list-disc</i>
+                  <ul class="list-disc">
+                    <li>
+                      <a href="">list-disc</a>
+                    </li>
+                    <li>
+                      <a href="">list-disc</a>
+                    </li>
+                    <li>
+                      <a href="">list-disc</a>
+                    </li>
+                    <li>
+                      <a href="">list-disc</a>
+                    </li>
+                  </ul>
+                  <i class="in" id="list">list-clear</i>
+                  <ul class="list-clear">
+                    <li>
+                      <a href="">list-clear</a>
+                    </li>
+                    <li>
+                      <a href="">list-clear</a>
+                    </li>
+                    <li>
+                      <a href="">list-clear</a>
+                    </li>
+                    <li>
+                      <a href="">list-clear</a>
+                    </li>
+                  </ul>
+                  <i class="in" id="list">list-inline</i>
+                  <ul class="list-inline mb-24">
+                    <li>
+                      <a href="">list-inline</a>
+                    </li>
+                    <li>
+                      <a href="">list-inline</a>
+                    </li>
+                    <li>
+                      <a href="">list-inline</a>
+                    </li>
+                    <li>
+                      <a href="">list-inline</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <b id="selects">Select </b>
+            <section>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="select select-box">
+                    <select name="" id="630d4db1-b9e9-458f-acc8-d9ba66d44df2">
+                      <option value="1">99</option>
+                      <option value="2">88</option>
+                      <option value="3">77</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                  <div class="pre-title mb-16">
+                    <i> .select </i>
+                  </div>
+                  <div class="pre-show">
+                    <div class="select">
+                      <select>
+                        <option>Select dropdown</option>
+                        <option>With options</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="pre-title mb-16">
+                    <i> .select.select-label </i>
+                  </div>
+                  <div class="pre-show">
+                    <div class="select select-label">
+                      <label>Nombre </label>
+                      <select>
+                        <option>Select dropdown</option>
+                        <option>With options</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="pre-title mb-16">
+                    <i> .select.select-size </i>
+                  </div>
+                  <div class="pre-show">
+                    <div class="select select-size">
+                      <select>
+                        <option>Añadir</option>
+                        <option>XS</option>
+                        <option>SM</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="pre-title mb-16">
+                    <i> .select.select-flat-no-icon </i>
+                  </div>
+                  <div class="pre-show">
+                    <div class="select select-flat-no-icon">
+                      <select>
+                        <option>Añadir</option>
+                        <option>XS</option>
+                        <option>SM</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <b id="tabs">tabs</b>
+            <i class="in" id="tabs">tabs  a</i>
+            <section class="mb-64">
+              <div class="tabs ttu">
+                <ul>
+                  <li class="is-active">
+                    <a>Pictures</a>
+                  </li>
+                  <li>
+                    <a>Music</a>
+                  </li>
+                  <li>
+                    <a>Videos</a>
+                  </li>
+                  <li>
+                    <a>Documents</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <script>
+        document
+          .getElementById('toggleButton')
+          .addEventListener('click', function () {
+            const body = document.body;
+            if (body.classList.contains('is-ltr')) {
+              body
+                .classList
+                .remove('is-ltr');
+              body
+                .classList
+                .add('is-rtl');
+              body.setAttribute('dir', 'rtl');
+            } else {
+              body
+                .classList
+                .remove('is-rtl');
+              body
+                .classList
+                .add('is-ltr');
+              body.setAttribute('dir', 'ltr');
+            }
+          });
+      </script>
+    </body>
+  </html>
